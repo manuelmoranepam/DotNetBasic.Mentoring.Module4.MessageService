@@ -20,13 +20,13 @@ namespace DotNetBasic.Mentoring.Module4.MessageService.Models
 
 			var index = 0;
 
-			if(_messages.Any())
+			if (_messages.Any())
 			{
 				index = _messages.Last().Id + 1;
 			}
 
 			var message = new Message(index, title, body, importance);
-			
+
 			_messages.Add(message);
 		}
 
